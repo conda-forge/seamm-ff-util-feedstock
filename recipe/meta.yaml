@@ -1,6 +1,6 @@
 {% set name = "seamm-ff-util" %}
-{% set version = "2021.10.14" %}
-{% set sha256 = "7bfd537087ba2244e5b1054918a8a05387d31e51939fc4fd9a7608a3f0f12d0a" %}
+{% set version = "2022.2.3" %}
+{% set sha256 = "af4eb49b1eac04aab6716367929c6b569a3a99a48d4f5e4ee0b6a6aff744fc00" %}
 
 
 package:
@@ -19,13 +19,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
+    - molsystem
     - packaging
-    - pillow
-    - python >=3.7
-    - rdkit
-    - seamm-util >=2021.5.6
+    - python >=3.8
+    - seamm-util
 
 test:
   imports:
