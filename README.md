@@ -1,11 +1,11 @@
-About seamm-ff-util
-===================
+About seamm-ff-util-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/seamm-ff-util-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/molssi-seam/seamm_ff_util
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/seamm-ff-util-feedstock/blob/main/LICENSE.txt)
 
 Summary: Utilities for handling forcefields in the SEAMM environment.
 
