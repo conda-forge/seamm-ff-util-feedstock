@@ -1,6 +1,6 @@
 {% set name = "seamm-ff-util" %}
-{% set version = "2023.4.6" %}
-{% set sha256 = "da4268235bcc82fa324b498b6186c6bb7e01e019849c8fbd83bb11c92c7cb5d4" %}
+{% set version = "2023.8.27" %}
+{% set sha256 = "579b84652cc295cbec621818dfb9429b260e50c868b59b07faffcaff8777c004" %}
 
 
 package:
@@ -22,13 +22,17 @@ requirements:
     - python >=3.8
   run:
     - molsystem
+    - numpy
     - packaging
     - python >=3.8
     - seamm-util
+    - sympy
 
 test:
   imports:
+    - numpy
     - seamm_ff_util
+    - sympy
   commands:
     - pip check
   requires:
