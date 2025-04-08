@@ -1,6 +1,6 @@
 {% set name = "seamm-ff-util" %}
-{% set version = "2025.3.16" %}
-{% set sha256 = "5e7a2018a0a9ffe91923fa4a04548bcfc880bc1b03aa3d48b2a602e84746cd42" %}
+{% set version = "2025.4.7" %}
+{% set sha256 = "b675f22cee78c665de579846deec266148b11c10b2d617c081fdc64d44b66c22" %}
 
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - molsystem
     - numpy
@@ -27,12 +28,14 @@ requirements:
     - python >={{ python_min }}
     - seamm-util
     - sympy
+    - tabulate
 
 test:
   imports:
     - numpy
     - seamm_ff_util
     - sympy
+    - tabulate
   commands:
     - pip check
   requires:
