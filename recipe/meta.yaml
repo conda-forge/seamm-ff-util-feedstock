@@ -35,7 +35,7 @@ test:
     - numpy
     - seamm_ff_util
     - sympy
-    - tabulte
+    - tabulate
   commands:
     - pip check
   requires:
