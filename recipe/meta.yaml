@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - molsystem
     - numpy
@@ -27,12 +28,14 @@ requirements:
     - python >={{ python_min }}
     - seamm-util
     - sympy
+    - tabulate
 
 test:
   imports:
     - numpy
     - seamm_ff_util
     - sympy
+    - tabulte
   commands:
     - pip check
   requires:
