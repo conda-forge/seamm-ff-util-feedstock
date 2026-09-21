@@ -1,6 +1,6 @@
 {% set name = "seamm-ff-util" %}
-{% set version = "2025.8.1" %}
-{% set sha256 = "8cf3ebefb3de761181934ed7016d4c191b19f60b6228ef0ba218b506f59d0b55" %}
+{% set version = "2026.9.20.1" %}
+{% set sha256 = "a763efc2d6fe71e0a47d3254f044d54b63c59ac3f2fd2f0b704a31255aa2a2db" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/s/seamm-ff-util/seamm_ff_util-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/s/seamm-ff-util/seamm_ff_util-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
